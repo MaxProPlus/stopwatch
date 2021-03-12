@@ -1,0 +1,58 @@
+{
+  "name": "stopwatch",
+  "productName": "Stopwatch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "homepage": ".",
+  "main": "main.js",
+  "keywords": [
+    "stopwatch"
+  ],
+  "scripts": {
+    "start": "electron .",
+    "start:client": "react-scripts start",
+    "build": "react-scripts build",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=x64 --out=out --ignore=\"/(src|public|node_modules|.idea|.eslintcache|.gitignore|.prettierrc|README.md|tsconfig.json)\"",
+    "package:linux": "electron-packager . --overwrite --platform=linux --arch=x64 --out=out --ignore=\"/(src|public|node_modules|.idea|.eslintcache|.gitignore|.prettierrc|README.md|tsconfig.json)\"",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^12.20.5",
+    "@types/react": "^16.14.2",
+    "@types/react-dom": "^16.9.10",
+    "electron": "^11.3.0",
+    "electron-packager": "^15.2.0",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "typescript": "^4.1.2",
+    "web-vitals": "^0.2.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
